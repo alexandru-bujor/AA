@@ -18,6 +18,7 @@ def strategy(my_history: list[int], opponent_history: list[int], rounds: int | N
             return "alternator"
         return "mixed"
 
+
     # Randomized opening moves for unpredictability
     if len(my_history) < 5:
         return [0, 1, 1, 0, 1][len(my_history)]
